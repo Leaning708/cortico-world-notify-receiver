@@ -1,0 +1,11 @@
+{
+  // 面板源码用 DOM 类型；Node 侧仍由 tsconfig.json 检查。
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["node"],
+    "noEmit": true
+  },
+  "include": ["src/webui/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

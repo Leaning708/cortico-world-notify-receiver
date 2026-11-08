@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="DSH task notification">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5B5BD6"/>
+      <stop offset="1" stop-color="#2F2FA8"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#bg)"/>
+  <path d="M16 22.5A5.5 5.5 0 0 1 21.5 17h21A5.5 5.5 0 0 1 48 22.5v13a5.5 5.5 0 0 1-5.5 5.5H30l-8.2 6.6c-1 .8-2.3 0-2.3-1.2V40.4A5.5 5.5 0 0 1 16 35.5z" fill="#FFFFFF"/>
+  <path d="M24 28.5h16M24 34h10" stroke="#4B4BC8" stroke-width="2.6" stroke-linecap="round"/>
+  <g fill="#FFD166">
+    <path d="M47 12a7 7 0 0 1 7 7v2.2l1.6 2.9a1.2 1.2 0 0 1-1 1.8H39.4a1.2 1.2 0 0 1-1-1.8L40 21.2V19a7 7 0 0 1 7-7z"/>
+    <path d="M44 27h6a3 3 0 0 1-6 0z"/>
+  </g>
+</svg>

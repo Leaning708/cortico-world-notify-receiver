@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Local build output that is not a shipped artifact
+*.log
+pnpm-debug.log*
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local archives / scratch
+archives/
+release/
+*.tmp
+*.bak-*
+
+# `dist/webui.js` is the shipped WebUI panel bundle and must stay tracked.
+dist/*
+!dist/webui.js

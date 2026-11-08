@@ -1,0 +1,65 @@
+{
+  "name": "cortico-world-notify-receiver",
+  "version": "0.3.3",
+  "type": "module",
+  "description": "Coopanion World extension: a bridge that receives DeepSeek Harness task notifications and relays replies back to DSH.",
+  "license": "GPL-3.0-or-later",
+  "keywords": [
+    "cortico-world",
+    "cortico",
+    "deepseek-harness",
+    "notification",
+    "desktop-pet"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@11.28.6",
+  "main": "./src/index.ts",
+  "cortico": {
+    "kind": "world",
+    "api": 6,
+    "displayName": "Notify Receiver",
+    "icon": "assets/icon.svg",
+    "tags": [],
+    "describe": "describe.json",
+    "webUiClient": "dist/webui.js",
+    "locales": {
+      "zh": {
+        "displayName": "Notify Receiver",
+        "description": "接收 DSH 的任务通知，并把 Coopanion 的回复转回 DSH。"
+      },
+      "en": {
+        "displayName": "Notify Receiver",
+        "description": "Receives DSH task notifications and relays Coopanion replies back to DSH."
+      }
+    }
+  },
+  "files": [
+    "src",
+    "dist",
+    "assets",
+    "README.md",
+    "CHANGELOG.md",
+    "describe.json"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.webui.json --noEmit",
+    "build:webui": "node scripts/build-webui.mjs",
+    "prepack": "node scripts/build-webui.mjs",
+    "verify:describe": "tsx scripts/verify-describe.mts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.18.2",
+    "cortico": "^0.2.11",
+    "esbuild": "^0.24.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "ws": "^8.22.1"
+  }
+}
